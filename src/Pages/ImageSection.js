@@ -8,8 +8,8 @@ const ImageSection=()=>{
             </div>
             <div className='about ms-3'>
                 <h4>I am <span className='text-warning ms-2'>Navdeep</span></h4>
-                <p style={{fontSize:'15px'}}>Lorem ipsum dolor sit amet consectetur, adipisicing
-                     elit. Enim assumenda odio ullam blanditiis facilis quibusdam ducimus accusantium, magnam ut, id placeat, 
+                <p style={{fontSize:'15px'}}>A dynamic, team spirited and performance driven professional ready to take a challenging and high-performance 
+oriented role in the field of computer engineering to develop advanced projects with efficiency and quality.
                     </p>
                  <div className="about-details">
                      <AboutDetails type={'Name'} value={'Navdeep'} />
