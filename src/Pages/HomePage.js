@@ -10,8 +10,7 @@ const HomePage = () => {
                   Navdeep.
               </span>
           </h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde debitis, quaerat quo laborum beatae illum culpa 
-              fugit ex, voluptatibus tempore laboriosam officiis asperiores id ut, qui iste repellat fuga harum.</p>
+          <p>Fresher B.Tech/B.E. (Computer Science and Engineering) looking for a job/internship with Frontend Development skills living in Sonipat/Sonepat</p>
            <div className='icons'>
            <ul className="nav justify-content-center">
                 <li className="nav-item">
