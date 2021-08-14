@@ -4,7 +4,7 @@ const Categories=({filter,categorie})=>{
            {
                categorie.map((item,i)=>{
                    return(
-                       <button key={i} className='btn text-white' onClick={()=>{filter(item)}}>{item}</button>
+                       <button key={i} className='btn text-white btn-primary me-3' onClick={()=>{filter(item)}}>{item}</button>
                    )
                })
            }
