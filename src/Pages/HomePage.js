@@ -3,7 +3,7 @@ import { FaFacebook,FaGithub,FaLinkedin } from 'react-icons/fa';
 const HomePage = () => {
   return (
    <div className='home'>
-      <div className="HomePage d-flex flex-wrap flex-column justify-content-center p-5">
+      <div className="HomePage d-flex flex-wrap flex-column justify-content-center mx-auto">
       <header>
           <h1>
               Hi, I am 

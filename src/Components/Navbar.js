@@ -6,7 +6,7 @@ const Navbar = ({navToggle,show}) => {
 show(false)
 navToggle(false)
   }
-  return <div className='my-4 d-flex justify-content-between flex-column position-absolute'>
+  return <div className='mt-4 d-flex justify-content-between flex-column position-absolute'>
      <div className="profile mb-2  ">
           <img src={IMG} alt="" className='m-auto d-block img-fluid rounded-circle w-75 h-75 border border-3 border-secondary' />
       </div>
@@ -18,7 +18,7 @@ navToggle(false)
         <Link onClick={(e)=>handelClick(e)} to='/projects' className="nav-link text-secondary" >Major Projects</Link>
         <Link onClick={(e)=>handelClick(e)} to='/contact' className="nav-link text-secondary" >Contact</Link>
       </nav>
-      
+     
   </div>;
 };
 export default Navbar;
