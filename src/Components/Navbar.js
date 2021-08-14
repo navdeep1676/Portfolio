@@ -18,9 +18,7 @@ navToggle(false)
         <Link onClick={(e)=>handelClick(e)} to='/projects' className="nav-link text-secondary" >Major Projects</Link>
         <Link onClick={(e)=>handelClick(e)} to='/contact' className="nav-link text-secondary" >Contact</Link>
       </nav>
-      <footer className='text-center  border-top-1 border-start-0 border-end-0 border-bottom-0 border border-secondary '>
-          <p className='mt-3'>@2021 Navdeep</p>
-      </footer>
+      
   </div>;
 };
 export default Navbar;
