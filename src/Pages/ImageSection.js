@@ -2,11 +2,11 @@ import img from '../Img/img.jpeg'
 import AboutDetails from './AboutDetails';
 const ImageSection=()=>{
     return(
-        <div className='ImageSection my-4  d-flex flex-lg-row flex-sm-column justify-content-around  flex-row'>
+        <div className='ImageSection my-4  d-flex flex-lg-column flex-column  flex-sm-column flex-xl-row justify-content-around '>
             <div className='img me-3 mt-2 '>
-                <img src={img} className='img-fluid ' alt="my_image" />
+                <img src={img} className='img-fluid mb-3' alt="my_image" />
             </div>
-            <div className='about ms-3'>
+            <div className='about '>
                 <h4>I am <span className='text-warning ms-2'>Navdeep</span></h4>
                 <p style={{fontSize:'15px'}}>A dynamic, team spirited and performance driven professional ready to take a challenging and high-performance 
 oriented role in the field of computer engineering to develop advanced projects with efficiency and quality.

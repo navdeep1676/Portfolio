@@ -19,8 +19,8 @@ const Projects=()=>{
     }
     return(
         <div className='MiniProject'>
-            <Title title={'Mini Projects'} span={'Mini Projects'}/>
-           <div className=''>
+            <Title title={'Major Projects'} span={'Mini Projects'}/>
+           <div className='mt-3'>
                
                    <Categories  filter={filter} categorie={categories}/>
                    <MenuItems className='' menuitem={menu}/>

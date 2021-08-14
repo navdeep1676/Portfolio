@@ -21,7 +21,7 @@ const Miniproject=()=>{
     return(
         <div className='MiniProject'>
             <Title title={'Mini Projects'} span={'Mini Projects'}/>
-           <div className=''>
+           <div className='mt-3'>
                
                    <Categories  filter={filter} categorie={categories}/>
                    <MenuItems className='' menuitem={menu}/>

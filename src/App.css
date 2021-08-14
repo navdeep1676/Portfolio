@@ -9,19 +9,19 @@ body{
   font-family: 'M PLUS Rounded 1c' , sans-serif;
   font-size: 1.2rem;
 }
-aside,main{height: 100vh;}
-aside{background-color: #191D2B;}
-main{background-color: #101218;background-image: url(./Img/dots.svg); overflow-y: auto;}
+.clear{content: '';
+clear: both;display: block;}
+.sidebar{z-index: 200; background-color: #191D2B; width: 250px;float: left;position: fixed; top: 0px; left: 0px; height: 100%; }
+main{background-color: #101218; background-image: url(./Img/dots.svg); margin-left: 250px;  overflow-y:scroll;}
 .nav-link:hover{
   background-color:#037fff;
   color: white !important;
   transition: all 1s;
 }
+.home{display: flex; flex-direction: column;
+justify-content: space-between;}
 .HomePage{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%,-50%);
+  min-height: 100vh;
 }
 .icons .nav-link{
 font-size: 18px;
@@ -33,6 +33,7 @@ color: white;
 position: relative;
 padding-bottom: 0.2rem;
 letter-spacing: 3px;
+z-index: 1;
 }
 .title::before{ content:'';
   bottom:0;
@@ -97,4 +98,54 @@ meter::-webkit-meter-bar {
   left: 50%;
   width: 400px;
   height: 400px;
+}
+.menu_bar{
+  box-shadow: 0px 0px 3px 2px white inset;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu_bar span{
+  transition: all 1s;
+    width: 38px;
+    height: 3px;
+    margin: 5px 0px;
+    display: block;
+    background-color: white;
+}
+
+.change span:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-3px, 6px);
+  transform: rotate(-45deg) translate(-3px, 6px);
+}
+
+.change span:nth-child(2){opacity: 0;}
+
+.change span:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-5px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+@media  screen and (max-width:992px) {
+  .sidebar{
+    transform: translate(-100%);
+    transition: all 1s;
+  }
+  main{margin-left: 0px;width: 100%;}
+  
+  .menu_bar{opacity: 1; z-index: 1000;}
+  
+  
+
+}
+
+.nav-toggle{
+  transition: all 1s;
+  transform: translate(0%);
+  z-index: 8;
+  background-color: #191D2B; width: 250px;float: left;position: fixed; top: 0px; left: 0px; height: 100%;
 }

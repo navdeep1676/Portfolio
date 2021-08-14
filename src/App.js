@@ -7,18 +7,35 @@ import Contact from './Pages/Contact'
 import Project from './Pages/Projects'
 import MiniProject from './Pages/Miniproject'
 import Err from './Pages/Default'
+import {CgMenuRightAlt} from 'react-icons/cg'
+import { useRef, useState } from "react";
 function App() {
+  const menubar=useRef()
+  
+  
+    const [navToggle,setnavToggle]=useState(false)
+    const [show,setShow]=useState(false)
+    const toggleAction=()=>{
+      setnavToggle(!navToggle)
+     
+      setShow(!show)
+    }
+    
+     
+   
+
   return (
-    <div className="container-fluid ">
-      <div className="row">
-        <div className="col-2 g-0">
-          <aside>
-            <Navbar/>
+    <div>
+          <aside  className={` ${show ? 'nav-toggle':' sidebar'}`} >
+            <Navbar navToggle={setnavToggle} show={setShow} />
             
           </aside>
-        </div>
-        <div className="col-10 g-0">
-          <main className='px-5 py-4'>
+          <div className={`menu_bar ${navToggle?'change':''} `}  onClick={()=>toggleAction()}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <main className='px-4'>
           <Switch>
                 <Route path='/' exact component={HomePage} />
                 <Route path='/about' component={AboutPage} />
@@ -28,8 +45,7 @@ function App() {
                 <Route default component={Err} />
               </Switch>
           </main>
-        </div>
-      </div>
+          <div className='clears'></div>
     </div>
   );
 }

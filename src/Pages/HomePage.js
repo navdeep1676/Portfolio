@@ -2,7 +2,8 @@ import { FaFacebook,FaGithub,FaLinkedin } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
-    <div className="HomePage">
+   <div className='home'>
+      <div className="HomePage d-flex flex-wrap flex-column justify-content-center p-5">
       <header>
           <h1>
               Hi, I am 
@@ -28,6 +29,7 @@ const HomePage = () => {
             
       </header>
     </div>
+   </div>
   );
 };
 export default HomePage;

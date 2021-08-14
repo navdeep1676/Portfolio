@@ -20,7 +20,7 @@ const AboutPage=()=>{
             <SkillSection b_class={'progress-bar progress-bar-striped bg-dark'} title={'Responsive Web Designs'} percentage={'90%'}/>
             <SkillSection b_class={'progress-bar progress-bar-striped bg-primary '}  title={'React.js'} percentage={'80%'}/>
             <Title title={'Services'} span ={'Services'} />
-            <div className='d-flex justify-content-between mt-4'>
+            <div className='row container'>
             <ServiceSection title={'UI Developer'}    img={ui} />
             <ServiceSection title={'React Developer'}  img={reactimg}/>
             <ServiceSection title={'Node Developer'}  img={nodeimg}/>
