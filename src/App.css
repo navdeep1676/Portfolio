@@ -142,7 +142,7 @@ meter::-webkit-meter-bar {
   
 
 }
-
+.MiniProject{height: 100vh;}
 .nav-toggle{
   transition: all 1s;
   transform: translate(0%);
